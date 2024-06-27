@@ -1,0 +1,698 @@
+Write a java program to return all the two digit palindrome number from a class Method and print the result in another class.
+
+BLC class name : PalindromeFounder
+
+mehtod name : getPalindrome
+
+modifiers : public , static
+
+return type : String
+
+--------------------------------------------------------------------
+
+Suppose you are tasked with developing a Java program to manage different types of crops on a farm. You are provided with a base class Crop and a subclass FruitCrop, each representing different types of crops.
+
+
+
+Crop Class:
+
+
+
+The Crop class has attributes for the name of the crop(String), the planting date(String), and the growth status(String).
+
+You are required to implement a parameterized constructor in the Crop class to initialize these attributes.
+
+Additionally, provide methods to return the values of these attributes. Name these methods as getName(), getPlantingDate(), and getGrowthStatus().
+
+
+
+FruitCrop Class:
+
+
+
+The FruitCrop class is a subclass of Crop and represents crops specifically categorized as fruits.
+
+It has an additional attribute to store the type of fruit(String).
+
+Implement a parameterized constructor in the FruitCrop class that initializes all attributes, utilizing the constructor of the superclass.
+
+Include a method to return the value of the fruit type attribute. Name this method as getFruitType().
+
+MainCrop Class:
+
+
+
+Develop a MainCrop class containing the main method to demonstrate the usage of the Crop and FruitCrop classes.
+
+Create instances of both Crop and FruitCrop classes using the parameterized constructors.
+
+Display the details of the crops, including their name, planting date, growth status, and fruit type (for fruit crops).
+
+
+
+Expected Output:
+
+
+
+Crop Name: Wheat
+
+Planting Date: 2023-01-15
+
+Growth Status: Growing
+
+
+
+Fruit Crop Name: Apple
+
+Planting Date: 2023-03-10
+
+Growth Status: Blooming
+
+Fruit Type: Red
+
+---------------------------------------------------------------------------------------
+
+Suppose you are working on a project to develop a geometry library that manages different geometric shapes, including circles, rectangles, and triangles. Your task is to implement classes for these shapes, ensuring that each shape has methods to calculate its area and perimeter.
+
+
+
+Shape Class:
+
+
+
+Develop a base class Shape with methods calculateArea() and calculatePerimeter().
+
+These methods should return 0.0 initially and should be overridden in the subclasses to calculate the actual area and perimeter based on the shape's properties.
+
+
+
+Circle, Rectangle, and Triangle Classes:
+
+
+
+Implement subclasses Circle, Rectangle, and Triangle, each inheriting from the Shape class.
+
+For the Circle class, include an instance variable radius.
+
+For the Rectangle class, include instance variables length and width.
+
+For the Triangle class, include instance variables side1, side2, and side3.
+
+Override the calculateArea() and calculatePerimeter() methods in each subclass to compute the area and perimeter of the respective shape.
+
+
+
+GeometryApp Class:
+
+
+
+Develop a driver class GeometryApp with a main method to showcase the functionality of the geometric shapes.
+
+Instantiate objects for each shape class, providing relevant parameters such as radius, length, width, and sides for the shapes.
+
+Calculate and display the area and perimeter for each shape using the methods defined in the respective classes.
+
+
+
+
+
+
+
+Example Output:
+
+Circle Area: 78.53981633974483
+
+Circle Perimeter: 31.41592653589793
+
+
+
+Rectangle Area: 12.0
+
+Rectangle Perimeter: 14.0
+
+
+
+Triangle Area: 6.0
+
+Triangle Perimeter: 12.0
+
+---------------------------------------------------------------------------
+
+Write a Java program to check if a number is a cube or not,and return that given number is a cube of which number
+
+
+
+Create a class Name CubeChecker which contains one static method 
+
+and Create a classs Name TestCubeChecker and call that CubeChecker class method.
+
+
+
+Class CubeChecker
+
+Modifiers : public , static
+
+Method : isCube()
+
+Parameter : int num
+
+return type : int
+
+
+
+Input Data:
+
+Input a number: 8
+
+Expected Output
+
+
+
+Number is a cube of 2
+
+
+
+
+
+Input Data:
+
+Input a number: 27
+
+Expected Output
+
+
+
+Number is a cube of 3
+
+--------------------------------------------------------------
+
+Create a Employee Class with private attributes employeeId, employeeName, salary, designation.
+
+Implement a parameterised constructor to set the employee details based on the parameters provided (employeeId, employeeName, salary) and initialize the 3 attributes.
+
+
+
+Implement the setDesignation method to automatically set the designation based on the following conditions:
+
+
+
+If the salary is above 50000, set the designation as "Manager."
+
+If the salary is 50000 or below and at least 30000, set the designation as "Developer."
+
+If the salary is below 30000, set the designation as "Tester."
+
+Implement the getEmployeeDetails method to return a formatted string containing all the employee details.
+
+
+
+In the main method, create an instance of the Employee class, set employee details, and print the formatted employee details.
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+Define a method which returns the next multiple of 100 for the given number.
+
+
+
+Write the method with the following specifications: 
+
+
+
+Name of the BLC class:NextMultipleOfHundred
+
+
+
+Name of method: getNextMultipleOfHundred()
+
+
+
+Access Modifier : public, static
+
+
+
+Arguments: one argument of type integer
+
+
+
+Return type: an integer value
+
+
+
+For example,
+
+
+
+If the given value is 123, return 200.
+
+
+
+if the given value is negative or zero, return -1
+
+
+
+
+
+
+
+Create an ELC class Main to test the application
+
+-----------------------------------------------------------------------
+
+Suppose you are working on developing a ticket booking system for various modes of transportation. Your task is to implement classes to represent different types of tickets, including train tickets, bus tickets, and flight tickets. Each ticket should store information such as the source, destination, price, and additional details specific to the mode of transportation.
+
+
+
+Ticket Class:
+
+
+
+Implement a base class Ticket with attributes to store the source, destination, and price of the ticket.
+
+Create a parameterized constructor to initialize these attributes.
+
+Include a method named displayTicketDetails() to print the details of the ticket.
+
+
+
+TrainTicket Class:
+
+
+
+Develop a subclass TrainTicket inheriting from the Ticket class.
+
+Add an additional attribute to store the train number.
+
+Override the displayTicketDetails() method to include the train number along with other ticket details.
+
+
+
+BusTicket Class:
+
+
+
+Create another subclass BusTicket inheriting from the Ticket class.
+
+Include an extra attribute to store the bus company name.
+
+Override the displayTicketDetails() method to print the bus company name along with other ticket details.
+
+
+
+FlightTicket Class:
+
+
+
+Implement a third subclass FlightTicket inheriting from the Ticket class.
+
+Add a new attribute to store the flight number.
+
+Override the displayTicketDetails() method to include the flight number in the ticket details.
+
+TicketBookingSystem Class:
+
+
+
+Develop a driver class named TicketBookingSystem containing the main method.
+
+Create instances of TrainTicket, BusTicket, and FlightTicket classes to represent different types of tickets.
+
+Demonstrate the functionality by calling the displayTicketDetails() method for each ticket object.
+
+Example Output:
+
+
+
+
+
+Train Ticket Details:
+
+Source: City A
+
+Destination: City B
+
+Price: 50
+
+Train Number: 123
+
+
+
+Bus Ticket Details:
+
+Source: City X
+
+Destination: City Y
+
+Price: 30
+
+Bus Company: XYZ Bus Company
+
+
+
+Flight Ticket Details:
+
+Source: City P
+
+Destination: City Q
+
+Price: 200
+
+Flight Number: ABC123
+
+---------------------------------------------------------------
+
+Suppose you are tasked with developing a Java program to manage bank accounts for both savings and checking purposes. Your task is to implement classes for bank accounts, allowing customers to deposit money, withdraw funds, and earn interest on savings accounts.
+
+
+
+BankAccount Class:
+
+
+
+Implement a class BankAccount with an instance variable balance to represent the current balance.
+
+Include a parameterized constructor to initialize the balance.
+
+Implement methods deposit(double amount) and withdraw(double amount) to allow customers to deposit and withdraw money.
+
+Ensure that the withdraw() method checks for sufficient funds and prints an appropriate message if the balance is insufficient.
+
+
+
+SavingsAccount Class:
+
+
+
+Develop a subclass SavingsAccount inheriting from the BankAccount class.
+
+Include an additional instance variable interestRate to represent the annual interest rate.
+
+Implement a method calculateInterest() to calculate and add interest to the account balance based on the interest rate.
+
+  [interest = balance * interestRate / 100]
+
+Ensure that the interest is added only for savings accounts.
+
+
+
+CheckingAccount Class:
+
+
+
+Create another subclass CheckingAccount inheriting from the BankAccount class.
+
+This class does not have any additional functionality beyond the base class.
+
+
+
+MainBank Class:
+
+
+
+Develop a driver class named MainBank containing the main method to test the functionality of the bank account system.
+
+Create instances of both SavingsAccount and CheckingAccount classes to represent different types of accounts.
+
+Demonstrate the usage of deposit, withdraw, and interest calculation methods for savings accounts.
+
+Example Output:
+
+
+
+
+
+Previous Balance: 1000.0
+
+Deposited: 200.0
+
+Interest added: 10.0
+
+Savings Account Balance: 1210.0
+
+
+
+Previous Balance: 1000.0
+
+Deposited: 300.0
+
+Withdrawn: 100.0
+
+Checking Account Balance: 1200.0
+
+---------------------------------------------------------------
+
+Define a method which returns the sum of digits of the given two digit number.
+
+
+
+
+
+
+
+Write the method with the following specifications: 
+
+
+
+Name of the BLC class:TwoDigitsSum
+
+
+
+Name of method: getSumOfDigits()
+
+
+
+Access Modifier : public, static
+
+
+
+Arguments: one argument of type integer
+
+
+
+Return type: int
+
+
+
+
+
+
+
+This method accepts an integer value as argument and return the sum of it's digits.
+
+
+
+
+
+
+
+Specifications: The value returned by the method getSumOfdigits() is determined by the following rules:
+
+
+
+
+
+
+
+if the given value is in between 10 and 99, return sum of it's digits. Example: if x = 34, return 7
+
+
+
+if the given value is negative, return -3
+
+
+
+if the given value is greater than 99, return -2
+
+
+
+if the given value is in between 0 and 9, return -1
+
+
+------------------------------------------------------------------------
+
+Define a class Car with properties 
+
+public String Company
+
+ public String model
+
+public int year
+
+public String mileage.
+
+
+
+ Implement a constructor to initialize these properties and
+
+override the toString method to display the car's information.
+
+---------------------------------------------------------------------
+
+Suppose you are tasked with developing a booking system for a travel agency to help customers book flights, hotels, and activities. Your task is to implement classes to represent these booking items and provide methods to book each item.
+
+Booking Class:
+
+
+
+Implement a class Booking with attributes to store the name of the item and its price.
+
+Include a parameterized constructor to initialize these attributes.
+
+Implement methods bookFlight(String airlines), bookHotel(int numberOfNights), and bookActivity(String activityType) to book flights, hotels, and activities respectively.
+
+Ensure that each booking method prints the details of the booked item, including its name, additional details specific to the booking type, and the price.
+
+
+
+Flight Class:
+
+
+
+Develop a subclass Flight inheriting from the Booking class.
+
+Implement the constructor to initialize the name of the flight and its price.
+
+Override the bookFlight method to include additional details such as the airline name.
+
+
+
+Hotel Class:
+
+
+
+Create another subclass Hotel inheriting from the Booking class.
+
+Implement the constructor to initialize the hotel name and its price.
+
+Override the bookHotel method to include additional details such as the number of nights.
+
+
+
+Activity Class:
+
+
+
+Implement a third subclass Activity inheriting from the Booking class.
+
+Implement the constructor to initialize the activity name and its price.
+
+Override the bookActivity method to include additional details such as the type of activity.
+
+
+
+MainBooking Class:
+
+
+
+Develop a driver class named MainBooking containing the main method to test the functionality of the booking system.
+
+Create instances of Flight, Hotel, and Activity classes to represent different booking items.
+
+Demonstrate the usage of booking methods by calling them for each booking item.
+
+Example Output:
+
+
+
+
+
+Flight Booked: Round Trip to Paris
+
+Airline: Air France
+
+Price: $500.0
+
+
+
+Hotel Booked: Luxury Suite
+
+Number of Nights: 5
+
+Price: $200.0
+
+
+
+Activity Booked: City Tour
+
+Activity Type: Sightseeing
+
+Price: $50.0
+
+-------------------------------------------------------------
+
+--------------
+
+ A superclass Product has been defined to store the details of 
+
+ a product sold by a wholesaler to a retailer. Define a subclass 
+
+ Sales to compute the total amount paid by the retailer with or
+
+ without fine along with service tax.
+
+Some of the members of both classes are given below:
+
+Class name: Product
+
+Data members/instance variables:
+
+____ name: stores the name of the product
+
+____ code: integer to store the product code
+
+____ amount: stores the total sale amount of the product (in decimals)
+
+Member functions/methods:
+
+Product (String n, int c, double p): parameterized constructor to
+
+         assign data members:
+
+void show(): displays the details of the data members
+
+
+
+Class name: Sales
+
+Data members/instance variables:
+
+___ day: stores number of days taken to pay the sale amount
+
+___ tax: to store the tax (in decimals)
+
+___ totamt: to store the total amount (in decimals)
+
+Member functions/methods:
+
+Sales(….): parameterized constructor to assign values to data 
+
+     members of both the classes
+
+void compute(): calculates the service tax @ 12.4% of the actual
+
+      sale amount and calculates the fine @ 2.5% of the 
+
+	  actual sale amount only if the amount paid by the
+
+	  retailer to the wholesaler exceeds 30 days
+
+	  calculates the total amount paid by the retailer 
+
+	  as (actual sale amount + service tax + fine)
+
+void show (): displays the data members of the superclass and the 
+
+     total amount
+
+Assume that the superclass Product has been defined. 
+
+Using the concept of inheritance, specify the class Sales
+
+giving the details of the constructor, void compute()) 
+
+and void show().
+
+-------------------------------------

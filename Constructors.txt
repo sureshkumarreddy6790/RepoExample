@@ -1,0 +1,123 @@
+ Q1. What is a constructor?
+  Answer:  It is a special member in java, which has same name
+   as class name and it is used to initialize NSV during object 
+   creation.
+   Constructor looks like a method but it does not have return type.
+   
+   How many types of constructors are there?
+   Answer: There are two types of constructors: 
+        1. default constructor: Every java program contains a default
+         constructor only when programmer does not create a constructor. 
+         It is created by the compiler.
+         A default constructor is always non parameterized.
+         e.g:
+         //Program to demonstrate default constructor
+         class Student
+         {
+         public static void main(String []args)
+         {
+             //logic
+         }
+         }
+         
+         javac Student.java
+         javap Student
+         class Student {
+        Student();
+        public static void main(java.lang.String[]);
+        }
+         
+        2. user defined constructor:
+        A constructor which is created by the programmer is called
+        as user defined constructor.
+        A user defined constructor can be parameterized as well
+        as non parameterized on the basis of requirement.
+        //Demonstrating user defined constructor
+       class Student
+       {
+       String name;
+       int age;
+       Student(String name,int age)    <---- UDC
+       {
+         this.name = name;
+         this.age = age;
+       }
+       public String displayDetails()
+       {
+          return "Name: "+name+" Age: "+age+"\n";
+       }
+       } 
+       class TestStudent
+       {
+       public static void main(String []args)
+       {
+          Student s1 = new Student("Joseph",23);
+          Student s2 = new Student("Mark",22);
+          System.out.println(s1.displayDetails());
+          System.out.println(s2.displayDetails());
+       }
+       }
+   Q3. When does a constructor gets executed? 
+   Answer: Whenever the programmer creates object, JVM calls the 
+   constructor based on passed arguments automatically.
+   public class Car {
+static String brandNameString = "TATA";
+String model;
+double mileage;
+Car(String model,double mileage)
+{
+	//initializing NSV
+	this.model = model;
+	this.mileage = mileage;
+	System.out.println("Constructor excecuted");
+}
+public static void main(String[] args) {
+	System.out.println("main starts");
+	System.out.println("main ends");
+}
+}
+Output: main starts
+         main ends
+Note: In the above program object is not created.Hence, constructor
+   is not executed.
+  If we want to execute the constructor then we must create
+  object.
+  When an object will be created, JVM will call constructor
+  automatically.
+  While creating object the programmer must pass required no. of
+  arguments, type of arguments or order of arguments otherwise
+  we get CTE.
+  
+  //changes in code to get the constructor executed.
+   public static void main(String[] args) {
+	System.out.println("main starts");
+	Car c1 = new Car("Nexon",13.5);
+	Car c2 = new Car("Altroz",21.3);
+	System.out.println("main ends");
+}
+  Output:main starts
+         constructor executed
+         constructor executed
+         main ends
+   
+   Q4. Why do we need a constructor when we already have NSM?
+   Answer: To initialize NSV and create multiple objects.
+   NSM has to be called explicitly then only the method will 
+   get executed. But constructor gets executed automatically
+   during the creation of object.   
+   
+  Q5. Why do constructors don't have return type?
+  Answer: Because, they are meant for initializing NSV and not for 
+  executing any kind of mathematical operation or business
+  operations. As they are not executing any operational logic 
+  hence, there is no use of return type for constructor.
+  
+  Problem no. 1: The NSV will not get initialized until the NSM is called
+  for an object.
+  
+  Problem no. 2: Even if programmer calls NSM and by chance the programmer
+  forgets to call the method for another object then data for another 
+  object will not be initialized.Hence there will be default values.
+  
+  The solution is to allow the user to initialize the NSV during the
+  creation of object. 
